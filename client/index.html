@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>HOME</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="scss/style.css">
+    <script src="constants/data.js"></script>
+    <script src="constants/teamData.js"></script>
+    <script src="app.js"></script>
+    <script src="directives/post.js"></script>
+    <script src="directives/details.js"></script>
+    <script src="directives/teamranking.js"></script>
+    <script src="controller/listPlayersController.js"></script>
+    <script src="controller/detailsController.js"></script>
+    <script src="controller/teamRankingsController.js"></script>
+</head>
+<body>
+<div ng-app="myproject" class="flex-container">
+<header>
+  <h3>{{title}}</h3>
+</header>
+
+<nav class="nav">
+      <ui>
+          <li>
+              <a ui-sref="teamRankings" ui-sref-active="active">Team Rankings</a>  
+            </li>
+            <li>
+                <a ui-sref="listPlayers" ui-sref-active="active">List of Players</a>  
+            </li>
+      </ui>
+</nav>
+
+<article class="article">
+    <ui-view></ui-view>
+</article>
+
+<footer>Copyright © yehkyahai.com</footer>
+</div>
+
+</body>
+</html>
