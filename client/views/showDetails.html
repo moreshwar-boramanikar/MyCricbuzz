@@ -1,1 +1,11 @@
-<details id="data.id" url="data.url" comments="data.comments" description="data.description"></details>
+<!-- <details id="data.id" url="data.url" description="data.description"></details> -->
+
+<div class="col-sm-4" style="padding-left: 300px;min-width:300px">
+        <img src={{data.url}} style="height: 250px; width: 250px"/>
+        <div ng-repeat="desc in data.description" style="min-width:300px">
+                Name - {{desc.name}} <br />
+                Jersi No. - {{desc.jersino}}
+                <br />
+                <a ui-sref="listPlayers" ui-sref-active="active">Back to Images</a>
+            </div>
+</div>

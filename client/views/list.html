@@ -1,14 +1,13 @@
-<div class="col-sm-4" style="min-width:300px">
-    <div>
-            <a ui-sref="details({id:id})" ui-sref-active="active">
-                <img src={{url}} style="height: 250px; width: 250px"/>
+<div style="min-width:300px" class="col-sm-4">
+            <a ui-sref="details({id:id})">
+                <img src={{url}} style="height: 100px; width: 100px"/>
             </a>
-    </div>
-    <input type="checkbox" ng-model="hideComments">Hide Comments
+    <!-- <input type="checkbox" ng-model="hideComments">Hide Comments
     <div ng-repeat="comment in comments" ng-hide="hideComments">
         {{comment.username}}:{{comment.comment}}
-    </div>  
+    </div>   -->
+
    <div ng-repeat="desc in description">
-        {{desc.name}}:{{desc.jersino}}
+        <b>{{desc.name}}</b>
     </div>
 </div>

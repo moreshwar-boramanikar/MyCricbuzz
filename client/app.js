@@ -1,4 +1,4 @@
-var myApp = angular.module('myproject', ['ui.router',"myconstants","myconstants1"]);
+var myApp = angular.module('myproject', ['ui.router',"myconstants","myconstants1","topPlayers"]);
 
 myApp.config(function($stateProvider) {
   
@@ -16,14 +16,30 @@ myApp.config(function($stateProvider) {
     templateUrl: 'views/showDetails.html'
   }
 
-  var teamRankings = {
-    name: 'teamRankings',
-    url: '/teamRankings',
+  var rankings = {
+    name: 'ranking',
+    url: '/rankings/:name/:format',
     controller:"teamRankingsController",
     templateUrl: 'views/teamRankings.html'
   }
 
+  var topPlayers = {
+    name: 'topPlayers',
+    url: '/topPlayers',
+    controller:"teamRankingsController",
+    templateUrl: 'views/topPlayers.html'
+  }
+  
+  var topPlayerDetailsState = {
+    name: 'topPlayerDetailsState',
+    url: '/topPlayers/:id',
+    controller:"topPlayersController",
+    templateUrl: 'views/topPlayersDetails.html'
+  }
+
   $stateProvider.state(listPlayersState);
   $stateProvider.state(detailsState);
-  $stateProvider.state(teamRankings);
+  $stateProvider.state(rankings);
+  $stateProvider.state(topPlayers);
+  $stateProvider.state(topPlayerDetailsState);
 });

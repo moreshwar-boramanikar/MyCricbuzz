@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="scss/style.css">
     <script src="constants/data.js"></script>
     <script src="constants/teamData.js"></script>
+    <script src="constants/topPlayers.js"></script>
     <script src="app.js"></script>
     <script src="directives/post.js"></script>
     <script src="directives/details.js"></script>
@@ -19,6 +20,8 @@
     <script src="controller/listPlayersController.js"></script>
     <script src="controller/detailsController.js"></script>
     <script src="controller/teamRankingsController.js"></script>
+    <script src="controller/topPlayersController.js"></script>
+    <script src="factory/rankingsFactory.js"></script>
 </head>
 <body>
 <div ng-app="myproject" class="flex-container">
@@ -26,14 +29,12 @@
   <h3>{{title}}</h3>
 </header>
 
-<nav class="nav">
+<nav class="nav sidebar">
       <ui>
-          <li>
-              <a ui-sref="teamRankings" ui-sref-active="active">Team Rankings</a>  
-            </li>
-            <li>
-                <a ui-sref="listPlayers" ui-sref-active="active">List of Players</a>  
-            </li>
+        <!-- <li><a ui-sref="teamRankings" ui-sref-active="active">Rankings</a></li> -->
+        <li><a ui-sref="ranking({name:'batsman',format:'test'})" ui-sref-active="active">Rankings</a></li>
+        <li><a ui-sref="listPlayers" ui-sref-active="active">List of Players</a></li>
+        <li><a ui-sref="topPlayers" ui-sref-active="active">Top Players</a></li>
       </ui>
 </nav>
 

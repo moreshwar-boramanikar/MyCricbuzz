@@ -1,68 +1,38 @@
- <div class="container">
+<h3>ICC Player and Team Rankings</h3>
+<ul class="nav nav-pills">
+            <li><a ui-sref="ranking({name:'batsman'})" ng-class="{'active-tab':tab=='batsman'}">Batsman</a></li>
+            <!-- <li><a data-toggle="tab" href="#Bowlers">Bowlers</a></li> -->
+            <li><a ui-sref="ranking({name:'bowlers'})" ng-class="{'active-tab':tab=='bowlers'}">Bowlers</a></li>
+            <li><a ui-sref="ranking({name:'teams'})" ng-class="{'active-tab':tab=='teams'}">Teams</a></li>
+        </ul>
+        <hr />
     <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#home">Test</a></li>
-        <li><a data-toggle="tab" href="#menu1">ODI</a></li>
-        <li><a data-toggle="tab" href="#menu2">T20</a></li>
+        <li><a ui-sref="ranking({name:tab,format:'test'})" ng-class="{'active-format':format=='test'}">Test</a></li>
+        <li><a ui-sref="ranking({name:tab,format:'odi'})" ng-class="{'active-format':format=='odi'}">ODI</a></li>
+        <li><a ui-sref="ranking({name:tab,format:'t20'})" ng-class="{'active-format':format=='t20'}">T20</a></li>
     </ul>
     
     <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
-        <h3>Test</h3>
+        <div class="tab-pane fade in active">
         <table class="table">
                 <thead>
                     <tr>
                         <th>Rank</th>
+                        <th ng-if="tab != 'teams'">Name</th>
                         <th>Team</th>
+                        <!-- <th ng-if="tab != 'teams'">Age</th> -->
                         <th>Points</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr ng-repeat="d in data">
-                        <td>{{d.id}}</td>
-                        <td><img src={{d.flagurl}} style="height: 20px; width: 20px"/> {{d.name}}</td>
+                        <td>{{d.rank}}</td>
+                        <td ng-if="tab != 'teams'">{{d.name}}</td>
+                        <td>{{d.country}}</td>
+                        <!-- <td ng-if="tab != 'teams'">{{d.age}}</td> -->
                         <td>{{d.points}}</td>              
                     </tr>
                 </tbody>    
             </table> 
         </div>
-        <div id="menu1" class="tab-pane fade">
-        <h3>ODI</h3>
-        <table class="table">
-                <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Team</th>
-                        <th>Points</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="d in data">
-                        <td>{{d.id}}</td>
-                        <td><img src={{d.flagurl}} style="height: 20px; width: 20px"/> {{d.name}}</td>
-                        <td>{{d.points}}</td>              
-                    </tr>
-                </tbody>    
-            </table>        
-        </div>
-        <div id="menu2" class="tab-pane fade">
-        <h3>T20</h3>
-        <table class="table">
-                <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Team</th>
-                        <th>Points</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="d in data">
-                        <td>{{d.id}}</td>
-                        <td><img src={{d.flagurl}} style="height: 20px; width: 20px"/> {{d.name}}</td>
-                        <td>{{d.points}}</td>              
-                    </tr>
-                </tbody>    
-            </table>        
-        </div>
     </div>
-</div>
-      

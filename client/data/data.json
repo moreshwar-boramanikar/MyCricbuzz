@@ -1,0 +1,111 @@
+{
+    "batsman":[{
+        "test":[{
+            "rank":1,
+            "name":"Steve Smith",
+            "country":"Australia",
+            "points":990
+        },
+        {
+            "rank":2,
+            "name":"Virat Kohli",
+            "country":"India",
+            "points":980
+        }],
+        "odi":[{
+            "rank":1,
+            "name":"Virat Kohli",
+            "country":"Australia",
+            "points":990
+        },
+        {
+            "rank":2,
+            "name":"AB deVilliers",
+            "country":"South Africa",
+            "points":980
+        }],
+        "t20":[{
+            "rank":1,
+            "name":"Chris Gayle",
+            "country":"West Indies",
+            "points":990
+        },
+        {
+            "rank":2,
+            "name":"Glenn Maxwell",
+            "country":"Australia",
+            "points":980
+        }]
+    }],
+    "bowlers":[{
+        "test":[{
+            "rank":1,
+            "name":"Kagiso Rabada",
+            "country":"South Africa",
+            "points":990
+        },
+        {
+            "rank":2,
+            "name":"James Anderson",
+            "country":"England",
+            "points":980
+        }],
+        "odi":[{
+            "rank":1,
+            "name":"Jasprit Burmrah",
+            "country":"India",
+            "points":990
+        },
+        {
+            "rank":2,
+            "name":"Hasan Ali",
+            "country":"Pakistan",
+            "points":980
+        }],
+        "t20":[{
+            "rank":1,
+            "name":"Imad Wasim",
+            "country":"Pakistan",
+            "points":990
+        },
+        {
+            "rank":2,
+            "name":"Washington Sundar",
+            "country":"India",
+            "points":980
+        }]
+    }],    
+    "teams":[{
+        "test":[{
+            "rank":1,
+            "country":"South Africa",
+            "points":990
+        },
+        {
+            "rank":2,
+            "country":"England",
+            "points":980
+        }],
+        "odi":[{
+            "rank":1,
+            "country":"India",
+            "points":990
+        },
+        {
+            "rank":2,
+            "country":"Pakistan",
+            "points":980
+        }],
+        "t20":[{
+            "rank":1,
+            "country":"Pakistan",
+            "points":990
+        },
+        {
+            "rank":2,
+            "country":"India",
+            "points":980
+        }]
+    }]
+
+}
