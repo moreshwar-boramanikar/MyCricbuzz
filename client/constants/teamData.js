@@ -16,7 +16,7 @@ myApp.constant("teamdata",[
     {
         id:3,
         flagurl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHRcQXq8RUAWKB4p2Ugrsq4tVSMoe516XJeM5dbbYVYdwXstMDJw",
-        name:"Austalia",
+        name:"Australia",
         points: 940
     },
     {

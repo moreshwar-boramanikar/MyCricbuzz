@@ -17,7 +17,21 @@ myApp.factory("rankingsFactory", function($http){
                 return response.data[name][0][format];
             })
     }
+    function getPlayerDetails(id){
+        return $http(request)
+            .then(response=>{
+                var _player;
+                response.data['playerDetails'].forEach(player => {
+                    if(player.id == id){
+                        console.log("ppp->",player);
+                        _player=player;
+                    }
+                });
+                return _player;
+            })
+    }
     return {
-        getRankingData:getRankingData 
+        getRankingData:getRankingData,
+        getPlayerDetails:getPlayerDetails
     }
 })

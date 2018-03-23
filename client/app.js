@@ -23,6 +23,13 @@ myApp.config(function($stateProvider) {
     templateUrl: 'views/teamRankings.html'
   }
 
+  var playerDetailsState = {
+    name: 'playerDetails',
+    url: '/playerDetails/:id',
+    controller:"playerDetailsController",
+    templateUrl: 'views/playerDetails.html'
+  }
+
   var topPlayers = {
     name: 'topPlayers',
     url: '/topPlayers',
@@ -42,4 +49,5 @@ myApp.config(function($stateProvider) {
   $stateProvider.state(rankings);
   $stateProvider.state(topPlayers);
   $stateProvider.state(topPlayerDetailsState);
+  $stateProvider.state(playerDetailsState);  
 });

@@ -12,27 +12,34 @@
         <li><a ui-sref="ranking({name:tab,format:'t20'})" ng-class="{'active-format':format=='t20'}">T20</a></li>
     </ul>
     
-    <div class="tab-content">
-        <div class="tab-pane fade in active">
-        <table class="table">
-                <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th ng-if="tab != 'teams'">Name</th>
-                        <th>Team</th>
-                        <!-- <th ng-if="tab != 'teams'">Age</th> -->
-                        <th>Points</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr ng-repeat="d in data">
-                        <td>{{d.rank}}</td>
-                        <td ng-if="tab != 'teams'">{{d.name}}</td>
-                        <td>{{d.country}}</td>
-                        <!-- <td ng-if="tab != 'teams'">{{d.age}}</td> -->
-                        <td>{{d.points}}</td>              
-                    </tr>
-                </tbody>    
-            </table> 
-        </div>
-    </div>
+    <table class="table table-ranking">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th ng-if="tab != 'teams'">Name</th>
+                <th ng-if="tab == 'teams'">Team</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="d in data">
+                <td>{{d.rank}}</td>
+                <td ng-if="tab != 'teams'">
+                    <div>
+                        <img src="{{d.photo}}" class='iconDetails'>
+                    </div>	
+                    <div style='margin-left:60px;'>
+                        <h4><a ui-sref="playerDetails({id:d.id})">{{d.name}}</a></h4>
+                        <div style="font-size:.7em">{{d.country}}</div>
+                    </div>
+                </td>
+                <td ng-if="tab == 'teams'">
+                    <div>
+                        <img src="{{d.photo}}" class='iconDetails'>
+                    </div>	
+                    <div style='margin-left:60px;'><h4>{{d.country}}</h4></div>
+                </td>
+                <td>{{d.points}}</td>              
+            </tr>
+        </tbody>    
+    </table>

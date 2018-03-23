@@ -1,76 +1,100 @@
 {
     "batsman":[{
         "test":[{
+            "id":1,
             "rank":1,
             "name":"Steve Smith",
+            "photo":"//i.cricketcb.com/i/stats/fw/50x50/img/faceImages/2250.jpg",
             "country":"Australia",
             "points":990
         },
         {
+            "id":2,
             "rank":2,
             "name":"Virat Kohli",
+            "photo":"//i.cricketcb.com/i/stats/fw/50x50/img/faceImages/1413.jpg",
             "country":"India",
             "points":980
         }],
         "odi":[{
+            "id":2,
             "rank":1,
             "name":"Virat Kohli",
-            "country":"Australia",
+            "photo":"//i.cricketcb.com/i/stats/fw/50x50/img/faceImages/1413.jpg",
+            "country":"India",
             "points":990
         },
         {
+            "id":3,
             "rank":2,
             "name":"AB deVilliers",
+            "photo":"//i.cricketcb.com/i/stats/fw/50x50/img/faceImages/370.jpg",
             "country":"South Africa",
             "points":980
         }],
         "t20":[{
+            "id":4,
             "rank":1,
             "name":"Chris Gayle",
+            "photo":"//i.cricketcb.com/i/stats/fw/50x50/img/faceImages/247.jpg",
             "country":"West Indies",
             "points":990
         },
         {
+            "id":5,
             "rank":2,
             "name":"Glenn Maxwell",
+            "photo":"//i.cricketcb.com/i/stats/fw/50x50/img/faceImages/7662.jpg",
             "country":"Australia",
             "points":980
         }]
     }],
     "bowlers":[{
         "test":[{
+            "id":6,
             "rank":1,
             "name":"Kagiso Rabada",
+            "photo":"//i.cricketcb.com/i/stats/fw/50x50/img/faceImages/9585.jpg",
             "country":"South Africa",
             "points":990
         },
         {
+            "id":7,
             "rank":2,
             "name":"James Anderson",
+            "photo":"//i.cricketcb.com/i/stats/fw/50x50/img/faceImages/65.jpg",
             "country":"England",
             "points":980
         }],
         "odi":[{
+            "id":8,
             "rank":1,
             "name":"Jasprit Burmrah",
+            "photo":"//i.cricketcb.com/i/stats/fw/50x50/img/faceImages/9311.jpg",
             "country":"India",
             "points":990
         },
         {
+            "id":9,
             "rank":2,
             "name":"Hasan Ali",
+            "photo":"//i.cricketcb.com/i/stats/fw/50x50/img/faceImages/11320.jpg",
             "country":"Pakistan",
             "points":980
         }],
         "t20":[{
+            "id":10,
             "rank":1,
             "name":"Imad Wasim",
+            "photo":"//i.cricketcb.com/i/stats/fw/50x50/img/faceImages/10408.jpg",
             "country":"Pakistan",
             "points":990
         },
         {
+            "id":11,
             "rank":2,
             "name":"Washington Sundar",
+            "photo":"//i.cricketcb.com/i/stats/fw/50x50/img/faceImages/7910.jpg",
             "country":"India",
             "points":980
         }]
@@ -79,33 +103,55 @@
         "test":[{
             "rank":1,
             "country":"South Africa",
+            "photo":"https://cdn.countryflags.com/thumbs/south-africa/flag-round-250.png",
             "points":990
         },
         {
             "rank":2,
             "country":"England",
+            "photo":"https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
             "points":980
         }],
         "odi":[{
             "rank":1,
             "country":"India",
+            "photo":"https://cdn2.iconfinder.com/data/icons/world-flag-icons/256/Flag_of_India.png",
             "points":990
         },
         {
             "rank":2,
-            "country":"Pakistan",
+            "country":"Austalia",
+            "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHRcQXq8RUAWKB4p2Ugrsq4tVSMoe516XJeM5dbbYVYdwXstMDJw",
             "points":980
         }],
         "t20":[{
             "rank":1,
-            "country":"Pakistan",
+            "country":"Austalia",
+            "photo":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHRcQXq8RUAWKB4p2Ugrsq4tVSMoe516XJeM5dbbYVYdwXstMDJw",
             "points":990
         },
         {
             "rank":2,
             "country":"India",
+            "photo":"https://cdn2.iconfinder.com/data/icons/world-flag-icons/256/Flag_of_India.png",
             "points":980
         }]
-    }]
-
+    }],
+    "playerDetails":[{
+            "id":1,
+            "name":"Steve Smith",
+            "country":"Australia",
+            "photo":"//i.cricketcb.com/stats/img/faceImages/2250.jpg",
+            "Born": "Jun 02, 1989 (28 years)",
+            "Role": "Batsman"
+        },
+        {
+            "id":2,
+            "name":"Virat Kohli",
+            "country":"India",
+            "photo":"//i.cricketcb.com/stats/img/faceImages/1413.jpg",
+            "Born": "Nov 05, 1988 (29 years)",
+            "Role": "Batsman"
+        }
+    ]
 }
